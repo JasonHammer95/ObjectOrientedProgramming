@@ -5,11 +5,17 @@ class Vehicle:
         self.color = color
         self.num_wheels = num_wheels
         self.speed = speed 
+        self.type = "ground" #sets all vehicles default type to "ground"
 
 
 bug_object = Vehicle("beetle", "yellow", 4, 1) #object(or instance) of vehicle class
 turtle = Vehicle("turtlebot", "green", 2, 5) #turtle is also an object, don't need to say object for it to be an object
 rover = Vehicle("rover", "purple", 4, 25) #third object
+drone = Vehicle("droney", "red", 0, 50)
+
+drone.type = "air"
+
+print(drone.type)
 
 print(bug_object) #can callout where object is in mempory, or callout for value of 
 print(turtle.color) #can callout value of an attribute
