@@ -1,21 +1,15 @@
 class Vehicle:
-    pass
+    
+    def __init__(self, name, color, num_wheels, speed): #each object has a self to identify it 
+        self.name = name #take perameters and assign them a value
+        self.color = color
+        self.num_wheels = num_wheels
+        self.speed = speed 
 
-bug_object = Vehicle() #object(or instance) of vehicle class
-turtle = Vehicle() #turtle is also an object, don't need to say object for it to be an object
-rover = Vehicle() #third object
 
-bug_object.color = "yellow" #object(or instance) of vehicle class and attribute
-bug_object.num_wheels = 4
-bug_object.speed = 1
-
-turtle.color = "green" 
-turtle.num_wheels = 2
-turtle.speed = 5
-
-rover.color = "purple"
-rover.num_wheels = 4
-rover.speed = 25
+bug_object = Vehicle("beetle", "yellow", 4, 1) #object(or instance) of vehicle class
+turtle = Vehicle("turtlebot", "green", 2, 5) #turtle is also an object, don't need to say object for it to be an object
+rover = Vehicle("rover", "purple", 4, 25) #third object
 
 print(bug_object) #can callout where object is in mempory, or callout for value of 
 print(turtle.color) #can callout value of an attribute
